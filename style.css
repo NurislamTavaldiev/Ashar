@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;500;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -144,14 +146,41 @@ header nav ul li {
     padding: 19px 60px;
     border: 0;
 }
-.grid-container {
-    display: grid;
-    grid-template-columns: auto;
-    gap: 10px;
-}
-.card {
-    position: relative;
-    top: 50px;
-    justify-content: space-between;
 
+.grid {
+    width: 1236 px;
+    gap: 40px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.card {
+    color: #000000;
+    position: relative;
+    display: inline-block;
+    top: 20px;
+    justify-content: space-between;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600px;
+
+}
+.card h2 {
+    font-size: 16px;
+}
+
+
+.card p {
+    color: #000000B2;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.card-link {
+    color: #000000;
+    font-size: 13px;
+    margin-left: 40px;
+}
+.card.under {
+    color: #22B573;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
