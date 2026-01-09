@@ -144,3 +144,14 @@ header nav ul li {
     padding: 19px 60px;
     border: 0;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+.card {
+    position: relative;
+    top: 50px;
+    justify-content: space-between;
+
+}
