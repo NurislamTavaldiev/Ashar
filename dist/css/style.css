@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;500;600;700&display=swap");
+body {
+  font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.ash--hero {
+  width: 1400px;
+  height: 809px;
+  background: linear-gradient(90deg, rgb(0, 65, 136) 0%, rgb(0, 33, 69) 100%);
+}
+.ash--hero .header .users {
+  display: flex;
+  top: -20px;
+  left: 20px;
+  width: 150px;
+  position: relative;
+  left: 900px;
+  list-style: none;
+}
+.ash--hero .header .users a {
+  text-decoration: none;
+  color: #fff;
+}
+.ash--hero .header .users li {
+  padding-left: 5px;
+}
+.ash--hero .header {
+  width: 1240px;
+}
+.ash--hero .header .nav--bar {
+  width: 50%;
+  display: inline-block;
+}
+.ash--hero .header .nav--bar .logo {
+  position: relative;
+  top: -20px;
+  left: 10px;
+}
+.ash--hero .header .nav--bar ul {
+  top: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 3;
+  position: relative;
+}
+.ash--hero .header .nav--bar li {
+  top: 40px;
+  display: inline-block;
+  list-style: none;
+  left: 30px;
+}
+.ash--hero .header .nav--bar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
