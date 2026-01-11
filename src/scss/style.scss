@@ -4,66 +4,62 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;500;600;700&display=swap');
 
-body {
-    font-size: 18px;
-}
-
 * {
     margin: 0;
     padding: 0;
 }
-.ash--hero {
-    width: 1400px;
-    height: 809px;
-    background: linear-gradient(90deg,rgba(0, 65, 136, 1) 0%, rgba(0, 33, 69, 1) 100%);
-  .header {
-    .users {
-        display: flex;
-        top: -20px;
-        left: 20px;
-        width: 150px;
-        position: relative;
-        left: 900px;
-        list-style: none;
-        a {
-            text-decoration: none;
-            color: #fff;
-        }
-        li {
-            padding-left: 5px;
-        }
-    }
-    width: 1240px;
-    .nav--bar {
-        width: 50%;
-        display: inline-block;
-    .logo {
-        position: relative;
-        top: -20px;
-        left: 10px;
-    }
-        ul {
-            top: 40px;
-            font-family: "Poppins", sans-serif;
-            font-weight: 500;
-            font-size: 18px;
-            display: flex;
-            justify-content: space-between;
-            z-index: 3;
-            position: relative;
-        }
-        li {
-            top: 40px;
-            display: inline-block;
-            list-style: none;
-            left: 30px;
-        }
-        a{
-        text-decoration: none;
-        color: #fff;
-        }
-    }
- } 
- 
+
+
+$liniar_container:linear-gradient(90deg,rgba(0, 65, 136, 1) 0%, rgba(0, 65, 136, 1) 100%); // background header
+
+@mixin nav {
+    font-family: Poppins ,sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 10px;
+    padding-left: 10px;
 }
 
+.ash-header {
+    float: left;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    &__logo img {
+       height: 50px;
+       margin-left: 100px;
+    }
+    &__user {
+        left: 300px;
+    }
+    
+}
+
+.ash-hero {
+    width: 100%;
+    background: $liniar_container;
+    .container {
+        width: 1240px;
+        height: 808px;
+    }
+
+    nav a{
+        @include nav;
+    }
+
+    ul {
+        display: flex;
+    }
+    li {
+        list-style: none;
+    }
+
+}
+
+.info {
+    margin-top: 50px;
+}
